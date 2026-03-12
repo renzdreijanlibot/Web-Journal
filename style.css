@@ -1,72 +1,177 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
+body{
+
+font-family: Arial, sans-serif;
+margin:0;
+
+background:linear-gradient(135deg,#cdb4db,#ffc8dd,#bde0fe);
+
 }
 
 /* Header */
-header {
-  background: #1d3557;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+
+header{
+
+text-align:center;
+padding:30px;
+color:white;
+background:linear-gradient(135deg,#5a189a,#7b2cbf);
+
+}
+
+/* Profile */
+
+.profile{
+
+width:100px;
+border-radius:50%;
+margin-bottom:10px;
+
 }
 
 /* Navigation */
-nav {
-  background: #457b9d;
-  text-align: center;
-  padding: 10px 0;
+
+nav{
+
+background:#3c096c;
+text-align:center;
+padding:12px;
+
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+nav a{
+
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a:hover{
+
+color:#ffc8dd;
+
 }
 
-/* Sections */
-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+/* Welcome */
+
+.welcome{
+
+text-align:center;
+padding:40px;
+
+}
+
+/* Button */
+
+.btn{
+
+display:inline-block;
+background:#ff4d6d;
+color:white;
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+
+}
+
+.btn:hover{
+
+background:#c9184a;
+
+}
+
+/* Dark Mode Button */
+
+.darkbtn{
+
+margin-top:10px;
+padding:8px 15px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+
 }
 
 /* Entries */
-.entry {
-  background: white;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+.entry{
+
+background:white;
+max-width:700px;
+margin:20px auto;
+padding:20px;
+border-radius:15px;
+
+box-shadow:0 6px 12px rgba(0,0,0,0.2);
+
+transition:transform 0.3s;
+
 }
 
-.entry h2 {
-  margin-top: 0;
+.entry:hover{
+
+transform:scale(1.03);
+
 }
 
-.entry small {
-  color: gray;
+/* About Card */
+
+.about-card{
+
+background:white;
+max-width:700px;
+margin:40px auto;
+padding:25px;
+border-radius:15px;
+
+box-shadow:0 6px 12px rgba(0,0,0,0.2);
+
 }
 
 /* Footer */
-footer {
-  background: #1d3557;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+
+footer{
+
+background:#3c096c;
+color:white;
+text-align:center;
+padding:12px;
+margin-top:40px;
+
+}
+
+/* Dark Mode */
+
+.dark{
+
+background:#121212;
+color:white;
+
+}
+
+.dark .entry,
+.dark .about-card{
+
+background:#1f1f1f;
+
+}
+
+.dark nav{
+
+background:#000;
+
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
+
+@media(max-width:600px){
+
+nav a{
+
+display:block;
+margin:10px;
+
+}
+
 }
